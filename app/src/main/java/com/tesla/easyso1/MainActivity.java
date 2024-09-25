@@ -100,8 +100,9 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, "onCreate: device_id " + device_id + " phone_type " + phone_type + " simserialnumber " + simserialnumber);
          */
 
-        // Intent intent = new Intent(this, MainActivity2.class);
-        // startActivity(intent);
+//         Intent intent = new Intent(this, MainActivity2.class);
+//         Intent intent = new Intent(this, MainActivity3.class);
+//         startActivity(intent);
     }
 
     /**

@@ -19,21 +19,6 @@
         tools:targetApi="31">
 
         <activity
-            android:name=".MainActivity2"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="http" />
-                <data android:scheme="https" />
-                <data android:scheme="activity2"/>
-                <data android:host="com.tesla.easyso1"/>
-                <data android:path="/parameter"/>
-            </intent-filter>
-        </activity>
-
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -41,6 +26,39 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".MainActivity2"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:scheme="activity2" />
+                <data android:host="com.tesla.easyso1" />
+                <data android:path="/parameter" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity3"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+<!--                只定义scheme 原则上任意host+path都可以调起 除非activity内部做了限制-->
+                <data android:scheme="activity3" />
+<!--                定义scheme+host 则必须完全匹配 后边?a=1&b=2不受影响-->
+                <data android:host="com.tesla.easyso1" />
+<!--                <data android:path="/parameter" />-->
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>

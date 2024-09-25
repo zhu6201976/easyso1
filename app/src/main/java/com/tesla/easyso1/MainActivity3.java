@@ -9,14 +9,14 @@ import java.util.Set;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity2 extends AppCompatActivity {
+public class MainActivity3 extends AppCompatActivity {
 
-    private static final String TAG = "MainActivity2";
+    private static final String TAG = "MainActivity3";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_main3);
 
         // 获取JS Intent传递过来的数据 https://developer.chrome.com/docs/android/intents?hl=zh-cn
         Intent intent = getIntent();
@@ -33,7 +33,7 @@ public class MainActivity2 extends AppCompatActivity {
         Log.d(TAG, "onCreate: data " + data); // activity2://com.tesla.easyso1/parameter?source=aoyun&deeplinkId=topic-103666Topic_5963e4663ee748beb6a5b330b86d1b35&scene=9&url=http://101.37.16.129:5000
         Log.d(TAG, "onCreate: action " + action);  // android.intent.action.VIEW
         Log.d(TAG, "onCreate: categories " + categories); //  {android.intent.category.DEFAULT, android.intent.category.BROWSABLE}
-        Log.d(TAG, "onCreate: component " + component); // ComponentInfo{com.tesla.easyso1/com.tesla.easyso1.MainActivity2}
+        Log.d(TAG, "onCreate: component " + component); // ComponentInfo{com.tesla.easyso1/com.tesla.easyso1.MainActivity3}
         Log.d(TAG, "onCreate: getStringExtra.name " + name); // admin
         Log.d(TAG, "onCreate: getBooleanExtra.isCheck " + isCheck); // false
     }

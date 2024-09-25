@@ -40,19 +40,41 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        // String cnt = "H4sIAAAAAAAAANVYWa%2BjSpL%2BL%2BfhvFDnQCZ7SUctsMHGgME2YKA1KrGD2XfwrfvfG9et6WnNqNXP443IyMggI4iML8LYzz%2Fegix8%2B%2F4GAImxJI3Dt29vQfeLxQYY5cPQ%2Bwh8jPggGEB8sHQYfWCAoNmAwUI%2FZjZpb2jevoPXquHtO%2Fz21g%2B%2FVrd03DKPR1vMm0wUbnOAhhRFk4BlMQz79tb0b9%2F%2FeNv4bxCDBMYCBuIkS7IvlS%2Fmz59OfeAvZ6EhWzQbnJGY2Hp5XliBvUiDxiaZgvbsPRJRRIhzKSBBg1mHQ2pNxL7KxNxC81N4pEO8paNYTyOGxoZ7e4W8wdDdPHhNajshqCsPYMLKELi%2Fkz3xQmXoc5kaFznOsr2cnsdjofjnB1BsPS%2FD0ro77F4o0sfBswsE9zkJG7PdFSldU1olfzBiXPYnvlXIXCHueEA2EbIX4czTZY62%2FmUnjSkyx6WS3nEY3ApOiOv9sakwDq%2FlskjI26Vw4J17Pg2nyUzn2C0sdFZB9YqbcDVUK9fOZRA9NDBy7YXQzuoTa12ZBoyTSSogzBJv9eNEuI2u1%2FOey%2FeXlKcnavcUKMty7gWzh8%2BbAFGuEUe3WPziOkPcCSwZ3CzNTLmb3K1tlNBM5ZH%2B1OS73UlRz4%2FSbv2ulx4Jp10fz4WMUIaqg9VubtgKcVeL2POigMEge%2BXQ7TWrExhCpAWCAPvYMez6iQcnsjvoj%2Bh8XmsK9RTiWEDGy2lCU9tDpyxP0%2FV8RggqXXNNpQ4PLn0Jz7qZybOgOR2C3of%2BIuB7WHZlckV3h4xGT6pyz7Ow9Sc6b3DLevAceqz4m1Bc3M4dbT%2FRkLOkSqWcyTQbQ8UUliU9rTnmx6wnnKw1o4%2F2HDYmg2jF8rwqq7VIpZqGK5K2rTY1KjGiBrzvSMHGLAAOaIsWY88HN72K94tblMV6wttaHxpXWE4EDvAS4%2BI%2Bcwo8t5JJ4NJD7RK79qgOg2ZRxxh0GKPJ6hh2Y3As9wonTijdKQZ01P5i3yJTJzRCLHjfskDmgT7J%2BftM29Uyc7vbaNkt1YSpaUubZ6MblhLmEQf9jm%2FV87rYJKcrVzZzr2HT16dYvoTcvHfVtkCQtkZK%2FvjAKHW0p0mUHQ%2BGztTWOwd%2F7M%2F3kq4O63pqqCuzGLO2PsehVqpCPbu6LDQYQWlPKWrSA4hRm%2FLwnlMMXCnE8Xx27uR6e%2BYOMfDYJbynyRgyPN11hnJd6lPULoq06qbo7nRPrpnYKKaiiDV6JEqRP11ELF%2FL8TjdWEGQxO15sK5S0fqzj5%2F5nGdJAhYsxo%2BWHEF6UHc5Yl9noz3eDhVjN2FxnjkxotSGD20eh72qW%2FqMFQfRZEAYeVClGmI4p9tRnw42cTEUsdJ4JvdoQq09rCi7mCyuq8V1%2BeO65%2FbqPBdi0XX7UhOnRFl7STwqp4MEIBtj8oyVJ6DDKy8IVsEip%2Bow8E%2BbRxoeCbRhJ%2FoGIwyeukhDnGk0ZT8dip3uGukg4nTTKUYpSpvIYaF2R4g33eFq3FwB9S4n7hRL4xzE%2BYCE6oFSqwwKEzehAewOdhEmjYPuxmZXgmsiNNb1OI4corJOcPBCNcwtKlyz2zEoVfLpmkvpaw36WOo9s%2Fg1AOgenBKVT0roX0SWZsFSlYjDhegpK3V2GW%2F8hQ9SsA%2B44%2BPeK%2FWCkCt%2ByhiKd3r74Rgze1gToAWOt5yiwTMcTMZ26x6XSFna00O21LE%2B9%2BuhOaaUBAVu3MI8y7JrHAuVWdPKTK%2FMMdDkHYFwh2A2LhP73N%2FKTMMaMS8IReF3WFsxC11GXHbxNCuK5DzTVxe4emxr9gQmcV%2B1D4GLzUUOsMuwByjKWvd8ECbyfo%2FNPPnaEKPPkg0z3v789lYO4QtXgnEbp8PQ9N9RNCXTeoOlKvkIu6D6DH2vyoOw%2BgwqNAhSEtX1G4oDBmc96Hk09AgSeCwdBBgWRAzpxxQFQvQ3SgHAYjQEkQ8jJvJwEkaQgIBmQoymQjokIhbGBIw%2F06Es%2FlZ7WfgVAJyOCJxlWIwJcUAxGIUTHs2yWxwGMYzex3CTWuO%2BCNHe53eON4Q0bzxT2bUE936%2F3DivhAonsz1%2BJDt42mJ8t8AQDLlSPxSTtztrajCjJPu4viWgy43qVJsSAPC5Y%2FktsSogusrhfjxNzG7NFzNkhlt4WeXl8WhiVf1676I46rqo%2B0pHb44yL%2Bx%2F%2FDaX2tyyoQtgiA22cZZ6D6TwC4eApQDJvHvhLRo2BkFBhmTwF2Mb%2FbOWeO%2BzIfoC703T%2FyiaH4UX%2F8%2Bg%2BdeB99cg7r2vDffFOVlwZT2bC5J3g3Lu%2B3CL%2Bkw6nNvgAqvhctjp%2BT5XrrNbn8Zdf01Bvl4Zt6jRAgkVOm6W4ypXLYvHvorCWuZkF%2FAjG7cP%2BqxIV%2F052YmzsEmlBXF2FseYQa8krKJBXqccRw3%2BSt%2Bp0czmAZl1pjDxPb7I8iWfklRAIuLmDjYC9AAwltkGD6HaNx5HiuPU38%2FOA5mlcjnI11MqMJahSjvDmalO9FC79CTApSRHh2rZpPvgwjQeYj0EbeJavGZZ3zc2%2BzRyevIPrOp21TMVbepkJuDh0hNSsNRgUqoMYlfEVxArsVGv9dPPj0%2FBWuZkDVEFQ7EZ6hLHLlyErNYBCCakXf2EC0fsDhqkqXDl5h%2FcsQ3d7ZjWjTGfRdZNK%2BAI%2FXYSkFugN6r0LMaFqq867t2bShlhQgIz4YYKBnDk8WSIljN4ZnBknFi4RxWpy66U3%2BjCqHPYLP2hdlzaVATMwcbSZ%2BJKGpZ7owIFv3AM6WF8nltBJ%2FqAT8FBnijfHZhi6gwuuqPXy3BooDpnY%2B4F7hH3ilInLgi9T1IjTc73FiG11byMxD5Sg7w14p3uu5cbyWpcFkaP9ommZzu5bemVNg5mVKROLgprZxqSr4mOLq2CJdu4ZhDGwmZSgTVMf8TxXdwMx7M2352wVWJFaYaxvZuOfJAE9FwCaDOUcr%2BTA00WCFcdT2xULkwGIyJ0HJi1RmaKkdXnNMI5FeXt9fOMxgnycJ0YstNxy6XnqhdnY5G2gwlIqrpcTwEmcroWXkOqlQ0b8WAS85XhACI3rpHOjMXtfNFGMkzZ06Lz%2B3BxeZ%2BsBnNAuCYpeJSL3Htf%2BElN%2Ba2E1QiIieWG61dsr7eiru3pSWsnEE2T%2Bry47o25MX62sLkXTdR1Zc8HTsmucCiaygbHNGCSAtAbsjjtXC52nepFmqZEUcpbuWZfvTNoEejv8SjGmTJTmMzknNngxbnzSbQxb%2FWdv46ca9sOh6nMpNtPgzgpXtPhlh9Nu6S%2FpeShynemapDzTFr0QBjgOB3HYz%2B396E5bGWIeSY5ckiShN8tuPe48UeOiDVCeazzpTY8s5CfrgtVO0WfSXv29Q3R6pJQmNZJvl4YkJVZ%2FPb973%2B8%2FWvqD%2BpqiKoh2L5R93%2FT%2FzQNP8Ar%2F%2F%2FYBKsoGOoODQt0S0to2Dc%2Fxq74nQgxHJAkgW9lFynsCGxHCGBHELjAERy%2FFfhgT%2FHcVuyKn48m2fYyb%2B0OxmxdTroRFHwR%2FUa%2BMXHoERjGRDhNYgSNexRkCSYgMAYGeEjGIYZRNI3hOMS2O3o%2BhH5A4UG4ZdyIjiF4dWfpZiX487%2B%2BvRXNr%2B7phXpD%2Fqvp%2Bu88%2FPbCwV%2B%2BeElkZbMxNq%2F8%2FZ9uCYP%2BM2uyaq3Hz6Au0U0EvRwsL8Eqxrwrhg6ZT4ZjYxX7Wxd%2B%2FfhhSKpwMzhV%2F%2FHjPSuj7Ov9F7TFVMDGcUx9xGQcfFA%2BiD82I%2BgPEL4YtEdhJPGehbG3qZD2IretLr3g6z1rNpCAnwD7hBj%2ByYL3cRMwr8o2X%2Fdf2PvQ%2F697dlGbvfZxFS7mxtyUbczxpdbclL5tzvjllG9%2FGRwUWZD%2FJ5ODIv83Jn8mWfz%2FyuztOgevAqiPBjVbonD3V9SrdRj9zKrhJ%2FZtm9nX5W2Lby%2BJhMrziyj86dd1EXnVz6Ebo1dkDf3rn4CtOwfbz%2FaB2xVCuJGv9wf2%2B%2FXxmtzkh99NPcHgGM6QcGv%2Bm%2Fy1jc29n39VEp9%2BV8991L2OxFK8SrQX8StW3%2F78B6ENMoZ%2BEAAA";
-        // String sig = "XalwhQZHtDQy57XQm6sOmJEQv9Lk5B0Bl000eIVYPJ3ifA2TVhTqIjvBm9ecZN%2FALleIU2Iw0H1%2Frz1zY%2FPpwKrejff1QcSzWDCH7rE0AJndxYOnhb%2BMrgBD%2B1NaokdPWFo4xkMkUqDLbl4PInsW%2F3cprh5k67e3V1g0%2BdLo5UCZVrpbFMU328EMdNHPgpoG7NFnkZ1EvwFoNmLqP9ww9Wcw2M1m4qe%2FBRRluY3M52pLVbyVePSGTzmG5G554ukcrFwDJpBZaFbmqDahZRO4rrTXabzwl1UkJ%2FNn2j5iGWfMDY8rNJYfIww2Gi0vMd5o41g3%2Bu%2BlPFCb7iZcx6gDBXSCNi%2FjjVu2xndBvQ%2BpDyAMcGMCDF1SqH%2FfMXf2%2Fv1A0ubgkGRO1srBu5GzNkqjSaG4Rux%2FkfEnlf2a1FT7vhjfaE1pS2wdgZ6oq4cNtn86M8EmWChMF5mNm12wHyO77ZMnbuA2y2cjBq%2Bx8etMmWUGG7EB%2B5ZsRlPdw7GcM9am";
-        String cnt = "https://www.baidu.com";
-        String sig = "ZXQPjMsvbbIATpb6YFz62VusX73TBtb465/cfeUdrQE1VRHb1I1BPIQRfkN2XdC2N4SDJ86JqZ9WwLJd6Zs6W3AJ1JqaPwmFzzrlksExcE7XACGHoq/J3siveQusbCnJ7z64r1qyLFKBjNQ0bgvR5deQ50/63H/pt+OOsHFEBwghA16QIBg8DSRVXRPnVCm0q4/VzryYeRleZKbFQH2u44HzsJAmScJK9flwH9N4u2fWRzG03JmOykvLtvpoL2P2kTQb/lfPP/J13saS1iOQ4k981jg/FldcmIbSQ8E8AQIjJDo1KRFw7CHkTve3h7RqfM7ykj41PTq8s/VUygB/ama+j4tU9CBLEPmEUKSyHU6JPkPmv+UuPyDkYe53SSH48jLzekFjJgLJr0eSkjdhZXm8apN2bXzZ/gsLqPkOBFfpg6XJ7DBmIRu+fJWa6F8TP5VxTd9vzBcAOdy0L9z0KeoLoejtyEmJwvVmVfF+bIJ1R0rS5DNbc9qSiVeoco83";
-        // String sig = "QTAaAFPmiEtCsKLwCoekSCwSbEXa8CP5RzcXc3nb2naUaQNswjCMD5wlriS1W5upuC+ZQKge2atpj2ARMJ16y2AQ0V/b7L4ARsmDmfT0MczA5jHtCM9kKtyIZgMUUZqCTZLcmd80Yms6u3nZHY5MN/Qd45Tqt/F1IyLooMw05n+3kWKw3GmpwdkL2OVeBTB+7DnJHpsNH0eqkomhY3vNzB8GMlcQ/X6Ce5C500fhprBG84xpXIpKoVD5vgaH61C5ABRihnGHX2uhflyoHsT21TgJNNdMHGWULgj/6gbaLaHzK8XIoPLesDylv1vlt1hpcfNsxyGwvD2kGJjcVHoKbqkBVCDa82sEkuLcXhlzTsEecXZC16/UgGlej7yFlSFRl36Adkyuhex8iZSxuHycBNYSzJqZTUZb9EhwB0ikOMScumT5k4VsembsMo9I1k71b++fghnliGjWBHQJtULLbYTbh2ioJftx26BZtzTanGBzQVNVwos2Yd93YM0/ljt1";
+        String cnt = "H4sIAAAAAAAAANVYWa+jSpL+L+fhvFDnQCZ7SUctsMHGgME2YKA1KrGD2XfwrfvfG9et6WnNqNXP443IyMggI4iML8LYzz/egix8+/4GAImxJI3Dt29vQfeLxQYY5cPQ+wh8jPggGEB8sHQYfWCAo" +
+                "NmAwUI/ZjZpb2jevoPXquHtO/z21g+/Vrd03DKPR1vMm0wUbnOAhhRFk4BlMQz79tb0b9//eNv4bxCDBMYCBuIkS7IvlS/mz59OfeAvZ6EhWzQbnJGY2Hp5XliBvUiDxiaZgvbsPRJRRIhzKSBBg1mHQ2pNxL7KxNxC81N4pEO8paNYTyOGxoZ7e4W8wdDdPHhNajshqCsPYML" +
+                "KELi/kz3xQmXoc5kaFznOsr2cnsdjofjnB1BsPS/D0ro77F4o0sfBswsE9zkJG7PdFSldU1olfzBiXPYnvlXIXCHueEA2EbIX4czTZY62/mUnjSkyx6WS3nEY3ApOiOv9sakwDq/lskjI26Vw4J17Pg2nyUzn2C0sdFZB9YqbcDVUK9fOZRA9NDBy7YXQzuoTa12ZBoyTSSogz" +
+                "BJv9eNEuI2u1/Oey/eXlKcnavcUKMty7gWzh8+bAFGuEUe3WPziOkPcCSwZ3CzNTLmb3K1tlNBM5ZH+1OS73UlRz4/Sbv2ulx4Jp10fz4WMUIaqg9VubtgKcVeL2POigMEge+XQ7TWrExhCpAWCAPvYMez6iQcnsjvoj+h8XmsK9RTiWEDGy2lCU9tDpyxP0/V8RggqXXNNpQ4" +
+                "PLn0Jz7qZybOgOR2C3of+IuB7WHZlckV3h4xGT6pyz7Ow9Sc6b3DLevAceqz4m1Bc3M4dbT/RkLOkSqWcyTQbQ8UUliU9rTnmx6wnnKw1o4/2HDYmg2jF8rwqq7VIpZqGK5K2rTY1KjGiBrzvSMHGLAAOaIsWY88HN72K94tblMV6wttaHxpXWE4EDvAS4+I+cwo8t5JJ4NJD7" +
+                "RK79qgOg2ZRxxh0GKPJ6hh2Y3As9wonTijdKQZ01P5i3yJTJzRCLHjfskDmgT7J+ftM29Uyc7vbaNkt1YSpaUubZ6MblhLmEQf9jm/V87rYJKcrVzZzr2HT16dYvoTcvHfVtkCQtkZK/vjAKHW0p0mUHQ+GztTWOwd/7M/3kq4O63pqqCuzGLO2PsehVqpCPbu6LDQYQWlPKWr" +
+                "SA4hRm/LwnlMMXCnE8Xx27uR6e+YOMfDYJbynyRgyPN11hnJd6lPULoq06qbo7nRPrpnYKKaiiDV6JEqRP11ELF/L8TjdWEGQxO15sK5S0fqzj5/5nGdJAhYsxo+WHEF6UHc5Yl9noz3eDhVjN2FxnjkxotSGD20eh72qW/qMFQfRZEAYeVClGmI4p9tRnw42cTEUsdJ4JvdoQ" +
+                "q09rCi7mCyuq8V1+eO65/bqPBdi0XX7UhOnRFl7STwqp4MEIBtj8oyVJ6DDKy8IVsEip+ow8E+bRxoeCbRhJ/oGIwyeukhDnGk0ZT8dip3uGukg4nTTKUYpSpvIYaF2R4g33eFq3FwB9S4n7hRL4xzE+YCE6oFSqwwKEzehAewOdhEmjYPuxmZXgmsiNNb1OI4corJOcPBCNcw" +
+                "tKlyz2zEoVfLpmkvpaw36WOo9s/g1AOgenBKVT0roX0SWZsFSlYjDhegpK3V2GW/8hQ9SsA+44+PeK/WCkCt+yhiKd3r74Rgze1gToAWOt5yiwTMcTMZ26x6XSFna00O21LE+9+uhOaaUBAVu3MI8y7JrHAuVWdPKTK/MMdDkHYFwh2A2LhP73N/KTMMaMS8IReF3WFsxC11GX" +
+                "HbxNCuK5DzTVxe4emxr9gQmcV+1D4GLzUUOsMuwByjKWvd8ECbyfo/NPPnaEKPPkg0z3v789lYO4QtXgnEbp8PQ9N9RNCXTeoOlKvkIu6D6DH2vyoOw+gwqNAhSEtX1G4oDBmc96Hk09AgSeCwdBBgWRAzpxxQFQvQ3SgHAYjQEkQ8jJvJwEkaQgIBmQoymQjokIhbGBIw/06E" +
+                "s/lZ7WfgVAJyOCJxlWIwJcUAxGIUTHs2yWxwGMYzex3CTWuO+CNHe53eON4Q0bzxT2bUE936/3DivhAonsz1+JDt42mJ8t8AQDLlSPxSTtztrajCjJPu4viWgy43qVJsSAPC5Y/ktsSogusrhfjxNzG7NFzNkhlt4WeXl8WhiVf1676I46rqo+0pHb44yL+x//DaX2tyyoQtgi" +
+                "A22cZZ6D6TwC4eApQDJvHvhLRo2BkFBhmTwF2Mb/bOWeO+zIfoC703T/yiaH4UX/8+g+deB99cg7r2vDffFOVlwZT2bC5J3g3Lu+3CL+kw6nNvgAqvhctjp+T5XrrNbn8Zdf01Bvl4Zt6jRAgkVOm6W4ypXLYvHvorCWuZkF/AjG7cP+qxIV/052YmzsEmlBXF2FseYQa8krKJ" +
+                "BXqccRw3+St+p0czmAZl1pjDxPb7I8iWfklRAIuLmDjYC9AAwltkGD6HaNx5HiuPU38/OA5mlcjnI11MqMJahSjvDmalO9FC79CTApSRHh2rZpPvgwjQeYj0EbeJavGZZ3zc2+zRyevIPrOp21TMVbepkJuDh0hNSsNRgUqoMYlfEVxArsVGv9dPPj0/BWuZkDVEFQ7EZ6hLHL" +
+                "lyErNYBCCakXf2EC0fsDhqkqXDl5h/csQ3d7ZjWjTGfRdZNK+AI/XYSkFugN6r0LMaFqq867t2bShlhQgIz4YYKBnDk8WSIljN4ZnBknFi4RxWpy66U3+jCqHPYLP2hdlzaVATMwcbSZ+JKGpZ7owIFv3AM6WF8nltBJ/qAT8FBnijfHZhi6gwuuqPXy3BooDpnY+4F7hH3ilI" +
+                "nLgi9T1IjTc73FiG11byMxD5Sg7w14p3uu5cbyWpcFkaP9ommZzu5bemVNg5mVKROLgprZxqSr4mOLq2CJdu4ZhDGwmZSgTVMf8TxXdwMx7M2352wVWJFaYaxvZuOfJAE9FwCaDOUcr+TA00WCFcdT2xULkwGIyJ0HJi1RmaKkdXnNMI5FeXt9fOMxgnycJ0YstNxy6XnqhdnY" +
+                "5G2gwlIqrpcTwEmcroWXkOqlQ0b8WAS85XhACI3rpHOjMXtfNFGMkzZ06Lz+3BxeZ+sBnNAuCYpeJSL3Htf+ElN+a2E1QiIieWG61dsr7eiru3pSWsnEE2T+ry47o25MX62sLkXTdR1Zc8HTsmucCiaygbHNGCSAtAbsjjtXC52nepFmqZEUcpbuWZfvTNoEejv8SjGmTJTmMz" +
+                "knNngxbnzSbQxb/Wdv46ca9sOh6nMpNtPgzgpXtPhlh9Nu6S/peShynemapDzTFr0QBjgOB3HYz+396E5bGWIeSY5ckiShN8tuPe48UeOiDVCeazzpTY8s5CfrgtVO0WfSXv29Q3R6pJQmNZJvl4YkJVZ/Pb973+8/WvqD+pqiKoh2L5R93/T/zQNP8Ar///YBKsoGOoODQt0S" +
+                "0to2Dc/xq74nQgxHJAkgW9lFynsCGxHCGBHELjAERy/FfhgT/HcVuyKn48m2fYyb+0OxmxdTroRFHwR/Ua+MXHoERjGRDhNYgSNexRkCSYgMAYGeEjGIYZRNI3hOMS2O3o+hH5A4UG4ZdyIjiF4dWfpZiX487++vRXNr+7phXpD/qvp+u88/PbCwV++eElkZbMxNq/8/Z9uCYP" +
+                "+M2uyaq3Hz6Au0U0EvRwsL8Eqxrwrhg6ZT4ZjYxX7Wxd+/fhhSKpwMzhV//HjPSuj7Ov9F7TFVMDGcUx9xGQcfFA+iD82I+gPEL4YtEdhJPGehbG3qZD2IretLr3g6z1rNpCAnwD7hBj+yYL3cRMwr8o2X/df2PvQ/697dlGbvfZxFS7mxtyUbczxpdbclL5tzvjllG9/GRwUW" +
+                "ZD/J5ODIv83Jn8mWfz/yuztOgevAqiPBjVbonD3V9SrdRj9zKrhJ/Ztm9nX5W2Lby+JhMrziyj86dd1EXnVz6Ebo1dkDf3rn4CtOwfbz/aB2xVCuJGv9wf2+/Xxmtzkh99NPcHgGM6QcGv+m/y1jc29n39VEp9+V8991L2OxFK8SrQX8StW3/78B6ENMoZ+EAAA";
+        String sig = "XalwhQZHtDQy57XQm" +
+                "6sOmJEQv9Lk5B0Bl000eIVYPJ3ifA2TVhTqIjvBm9ecZN/ALleIU2Iw0H1/rz1zY/PpwKrejff1QcSzWDCH7rE0AJndxYOnhb+MrgBD+1NaokdPWFo4xkMkUqDLbl4PInsW/3cprh5k67e3V1g0+dLo5UCZVrpbFMU328EMdNHPgpoG7NFnkZ1EvwFoNmLqP9ww9Wcw2M1m4qe" +
+                "/BRRluY3M52pLVbyVePSGTzmG5G554ukcrFwDJpBZaFbmqDahZRO4rrTXabzwl1UkJ/Nn2j5iGWfMDY8rNJYfIww2Gi0vMd5o41g3+u+lPFCb7iZcx6gDBXSCNi/jjVu2xndBvQ+pDyAMcGMCDF1SqH/fMXf2/v1A0ubgkGRO1srBu5GzNkqjSaG4Rux/kfEnlf2a1FT7vhjfa" +
+                "E1pS2wdgZ6oq4cNtn86M8EmWChMF5mNm12wHyO77ZMnbuA2y2cjBq+x8etMmWUGG7EB+5ZsRlPdw7GcM9am";
+//         String cnt = "uvUUt/gj0NMD1382pMTOM6wQHC//wXEgLpieA+IO7hs3I+jthrUdeyGH3oc99NWSGi4mmxQfSPHnxTRxaedeNNCuK8Yffj3fVOKEeCVOxKVdc99fjgBuhWwvGP8ZNktHT6fPO9MT/1HJmIH5vaF0mBe9Jm/oyzY6tuYHy/o7O/LUcvmpLAoWAGSAQYjLAd00O/XG+8hlfNWko0IXSJbVc09uL59VPeip5jcTX4GJp3HXFXQRBkj6Z3wPQkFDdcLOgI7wQtR9b3TdyOf1vykH3ZEd+LDhhpmBTnh8q56wWbyjH73GighUDe3Fy9rRQNc54HFfmxqyOW/1oww/6LnofMLRL3AAzaOJC+5kbGAkSRqSFRkEijEHO5ujC4B1CiWz1ZTC6F6trAUoHoWTAicXX7z0dAz2rOSVkVAjbRchO2XmDZp6S8AGcWU9Fjj2s3m1blt4nyCkrm6+/2L7+i2QhOnw0fSK5C3yJVUdDkVbwO2RC96RCVfxVIrULMuSDpGW";
+//         String sig = "AnEubghSILxL1dcD0Gu9FGw1aUK2VGqn5DtVLycDQpVi8By13GKIbcTh1YB1ji5aFnZ1j7SAyAFOlS/bcZk1+qrxzEVmzz/0n+R06NcR3kEyO6BZ9yO9Z+goKR3vq9haGvHndgZAOJEfz4HBGdRe1S+aeE+2gBGoEb+ZcQjrY9oEhLJUnlxttEm5r2Py3hI2zspjObwSLhWcPArKTxJ+EGTSPbMTo92QTj8od7FnhCm2TmQuUpkgpbOL3dAudENt4rE7uS1MdJiRiOkz8saNzpWPVFhSTlILT/tnReBj8IJ1nW1ZjwQRGwi4HWk7TxjeZffuXWaC6DdKmSwXwrtYaIqe2rXvtRZlDce3nFNuANOIntJ53v2EE9/l3mF0FEtyOeaC1p2PVi0yu/vTU5xc1A/nqRH4tfK79Zm7jW685KcrOa3KougOmrcBss/2Q0Sm4e8oCQQZ8VYTZtTroFFtW4oB1BFIRzgsCZLB/0ZPhgjQ9RU9ARnmNDAng4+A4wQc";
 
         boolean ret = false;
         try {
-            ret = this.verify(cnt, sig);
+            ret = this.verify(cnt, sig);  // 返回结果跟项目执行一致
         } catch (UnsupportedEncodingException e) {
             throw new RuntimeException(e);
         }
         Log.d(TAG, "onCreate: " + ret);
+        System.out.println(TAG + " onCreate: " + ret);
 
         /*
         // Example of a call to a native method
@@ -77,6 +99,9 @@ public class MainActivity extends AppCompatActivity {
         @SuppressLint("HardwareIds") String simserialnumber = tm.getSimSerialNumber();
         Log.d(TAG, "onCreate: device_id " + device_id + " phone_type " + phone_type + " simserialnumber " + simserialnumber);
          */
+
+        // Intent intent = new Intent(this, MainActivity2.class);
+        // startActivity(intent);
     }
 
     /**
@@ -103,12 +128,14 @@ public class MainActivity extends AppCompatActivity {
     public boolean verify(String cnt, String sig) throws UnsupportedEncodingException {
         // 对cnt进行url编码 再sha256加密
         String cnt_sha256 = sha256Encrypt(URLEncoder.encode(cnt, "UTF-8"));
+        // 正确结果 726e693d6d2963e02ed16fb2a1fcb973268d678134aaa42556011857f077de4e
+        System.out.println(cnt_sha256);
 
         try {
             if (check(cnt_sha256, sig, false)) {
                 return true;
             }
-            return check(cnt_sha256, sig, true);
+            return check(cnt_sha256, sig, true);  // 走的这个分支返回true
         } catch (Exception e2) {
             return false;
         }
@@ -168,6 +195,7 @@ public class MainActivity extends AppCompatActivity {
             // 返回 Base64 编码的加密结果
             String rsa_cnt = Base64.encodeToString(encryptedData, Base64.DEFAULT);
             Log.d(TAG, "check: " + rsa_cnt);
+            System.out.println(TAG + " check: " + rsa_cnt);
 
             return signature.verify(Base64.decode(sig.getBytes("UTF-8"), 2));
         } catch (Exception e2) {

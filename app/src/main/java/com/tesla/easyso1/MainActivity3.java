@@ -37,4 +37,6 @@ public class MainActivity3 extends AppCompatActivity {
         Log.d(TAG, "onCreate: getStringExtra.name " + name); // admin
         Log.d(TAG, "onCreate: getBooleanExtra.isCheck " + isCheck); // false
     }
+
+    
 }

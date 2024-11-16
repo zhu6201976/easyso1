@@ -1,5 +1,7 @@
 package com.tesla.easyso1;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Base64;
@@ -103,6 +105,26 @@ public class MainActivity extends AppCompatActivity {
 //         Intent intent = new Intent(this, MainActivity2.class);
 //         Intent intent = new Intent(this, MainActivity3.class);
 //         startActivity(intent);
+
+        // 跳转华为快应用 可以实现
+        Intent intent = new Intent();
+        Uri uri = Uri.parse("hap://app/com.shayu.bizhi/hssdk/blank?qid=199&lid=2225&aid=2225&did=2225&source=ks&h=1&");
+        intent.setData(uri);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+
+        // debug
+        // 这个加了跳转不成功 崩溃 华为快应用不需要这个action
+        // intent.setAction("com.huawei.phoneservice.intent.action.QRCODE_FROM_3RD");
+        // 这两个错误加也可以跳转快应用
+        intent.addCategory("android.intent.category.DEFAULT");
+        intent.addCategory("android.intent.category.BROWSABLE");
+        // 这个设置错了也不能跳转快应用
+        //intent.setComponent(new ComponentName("com.huawei.phoneservice", "com.huawei.myhuawei.ui.HwDeeplinkActivity"));  // 跳我的华为
+        //intent.setComponent(new ComponentName("com.huawei.phoneservice", "com.huawei.myhw.ui.HwHomeActivity"));  // 崩溃
+        //intent.setComponent(new ComponentName("com.huawei.fastapp", "com.huawei.fastapp.app.protocol.WebInterruptedActivity"));  // 崩溃
+
+        this.startActivity(intent);
+
     }
 
     /**

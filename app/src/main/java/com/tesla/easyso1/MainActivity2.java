@@ -2,12 +2,13 @@ package com.tesla.easyso1;
 
 import android.content.ComponentName;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 
-import java.util.Set;
-
 import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.Set;
 
 public class MainActivity2 extends AppCompatActivity {
 
@@ -21,6 +22,7 @@ public class MainActivity2 extends AppCompatActivity {
         // 获取JS Intent传递过来的数据 https://developer.chrome.com/docs/android/intents?hl=zh-cn
         Intent intent = getIntent();
         String scheme = intent.getScheme();
+        Uri uri = intent.getData();
         String data = intent.getDataString();
         String action = intent.getAction();
         Set<String> categories = intent.getCategories();  // JS可以传多个

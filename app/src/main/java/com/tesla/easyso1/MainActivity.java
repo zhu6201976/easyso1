@@ -7,6 +7,8 @@ import android.text.TextUtils;
 import android.util.Base64;
 import android.util.Log;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.tesla.easyso1.databinding.ActivityMainBinding;
 
 import java.io.UnsupportedEncodingException;
@@ -20,8 +22,6 @@ import java.security.spec.X509EncodedKeySpec;
 import java.util.Locale;
 
 import javax.crypto.Cipher;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
@@ -107,10 +107,11 @@ public class MainActivity extends AppCompatActivity {
 //         startActivity(intent);
 
         // 跳转华为快应用 可以实现
-        Intent intent = new Intent();
-        Uri uri = Uri.parse("hap://app/com.shayu.bizhi/hssdk/blank?qid=199&lid=2225&aid=2225&did=2225&source=ks&h=1&");
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        //Uri uri = Uri.parse("hap://app/com.shayu.bizhi/hssdk/blank?qid=199&lid=2225&aid=2225&did=2225&source=ks&h=1&");  // 直接打开快应用
+        Uri uri = Uri.parse("https://www.baidu.com");  // 一般会用浏览器打开
         intent.setData(uri);
-        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        //intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 
         // debug
         // 这个加了跳转不成功 崩溃 华为快应用不需要这个action
